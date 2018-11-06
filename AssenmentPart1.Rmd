@@ -53,4 +53,23 @@ tm_shape(BoroughDataMap) +
               title=c("Age 20 to 24 - Unit : Persons", "Age 25 to 29 - Unit : Persons", "Age 30 to 44 - Unit : Persons", "Age 45 to 59 - Unit : Persons", "Age 60 to 64 - Unit : Persons"))
 ```
 ```
+Commentary writing
+
+In assignment one, two different software (GIS and R-studio) has been chosen as the mapping tools, in order to evaluate the benefits and drawbacks between the GUI and code-based mapping.
+
+The process of GIS mapping
+To begin with, in GIS, the data was chosen from UK open data, I have chosen the Wembley data which is in the area of my accommodation, the data was downloaded from the Digimap website. The UK data website seems to be a useful tool that helps me downloaded the open data, firstly, the topography data of Wembley has been chosen as geodatabase file, after the specific area has been selected, the geodatabase file was recognized in GIS, meanwhile, the road network data was selected to analysis. The Network Analyst function has been created from the toolbar, after that the inverse distance weighting tool has been explored as a method in network analysis.
+
+The process of R-studio mapping
+In addition, in R-studio, a useful tool based on code mapping. Firstly, the Scotland boundary data has been chosen to downloaded and Census aggregate data from UK data service website, the aim was to calculate the population of different regions from age 20 to 65, and visualized the data in five maps with different color’s legend.
+
+Comparing two progress in mapping (GUI and code based)
+To evaluate the difference between the GUI and code-based mapping, I have chosen two aspects efficiency and flexibility.
+
+In Flexibility, GIS seems to have more functions in extension. For example, in the task of road network analysis, the polygon elements could be transformed into line elements, and the road network analysis tool could create new network dataset, which seems could not be completed in R-studio. In the mapping of R-studio, the limited parameter adjustment method obviously limits the expansion of more ideas and tools. Moreover, compared with two software, GIS is more flexible in layout design, as well as the layout of the page by adding a data graph box, so that we could avoid the shade between important information effectively, and create more elegant typography layout. However, in r, the layout of the data elements was limited to be defined as the direction of the rules, there seems to have no way to adjust a more detailed process.
+
+In addition, the code-based software seems to be better in Efficiency. Firstly, it saved drawing tedious steps, for example, by using r studio notebook create existing mapping code, and upload them to the git hub, it can be done by looking up the required code on the GitHub website and completing the drawing of the image at R-studio which seems to avoid some extra steps, even if in GIS, which provides model builder to make process systematic, but it still needs a lot of data preparation and the software preparation. furthermore, R-studio seems to handle more verbose data and use code additions for bulk image generation. For example, we can quickly complete the drawing in ten identical base graphs and easily add title names or legend to them. However, in GIS, in order to the production of multiple images, the addition of multiple data frames are required and the information such as the title, legend and so on should be written separately. Obviously, R-studio can save the time of drawing and avoid the work such as repeated drawing instructions
+
+Conclusion
+In the whole, GIS and R-studio are both good tools for geographic mapping, to some extent, GIS provides a more flexible operating module, However, R-studio is a more efficient way to draw maps than GIS.
 
