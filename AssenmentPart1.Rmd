@@ -1,6 +1,8 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
@@ -19,12 +21,7 @@ Data2 <- c(101:200)
 #Plot the data
 plot(Data1, Data2, col="blue")
 scotlandDataOSK<- read.csv("Data_AGE_UNIT.csv")
-
-install.packages("tidyverse")
 scotlandData<- read.csv("Data_AGE_UNIT.csv")
-install.packages("maptools")
-install.packages(c("classint", "OpenStreetMap", "tmap"))
-install.packages(c("RColorBrewer", "Sp", "rgeos", "tmap", "tmaptools", "sf", "downloader", "rgdal", "geojsonio"))
 library(maptools)
 library(RColorBrewer)
 library(classInt)
@@ -73,3 +70,11 @@ In addition, the code-based software seems to be better in Efficiency. Firstly, 
 Conclusion
 In the whole, GIS and R-studio are both good tools for geographic mapping, to some extent, GIS provides a more flexible operating module, However, R-studio is a more efficient way to draw maps than GIS.
 
+```{r ,echo=FALSE}
+library(png)
+library(grid)
+img1 <- readPNG("gis_assignment1.png")
+grid.raster(img1)
+img2 <- readPNG("r-studio assessment.png")
+grid.raster(img2)
+```
